@@ -3,7 +3,7 @@ This is a simple to use single touch button with status indicator to control the
 
 Alarmo works great with Home Assistant Alarm Panel Card, but it needs to be displayed in a Smartphone or Tablet where Arming button options are made available as well as the keypad to disarm the alarm system. It may not be feasible sometimes (in my case) to place the touch screen devices next to the doorway. This has led to possible false alarm triggering due to opening the door without knowing that it was not disarmed. With Alarmo OneTouch, the illuminated button will indicate the arming status, and with a touch of the button, Alarmo can also be controlled with ease.
 
-![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmPanelCard.png)
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarm Panel Card.png)
 
 ### Single button to arm and disarm Alarmo
 
