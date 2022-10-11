@@ -43,3 +43,6 @@ The device will auto reconnect if it is disconnected from the AP or MQTT server.
 The circuit is quite straight forward. Only 3 IO pins are used from the WeMos D1 Mini module to connect with the switch, LED and buzzer. The device is powered directly from the 5V USB port when it is plugged in.
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouchSch.png)
+
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/wemos_d1mini_tactile_switch_with_led.png)
+
