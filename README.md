@@ -30,8 +30,16 @@ The button reads user clicks to determine the number of press count. The press c
 On power up, the device will look for the preset AP SSID to connect. If it failed to connect, it will enable AP mode and a host (Laptop or Smartphone) can then connect to the device and configure its connection parameters in its web configuration portal.
 Alarmo OneTouch connects to Home Assistant through Wi-Fi and using MQTT. MQTT needs to be enabled in Alarmo General Configuration. The device subscribe and listens to the State topic.
 
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_enable_mqtt.png)
+
 On a valid button action, it publishes the specific commands to the Command topic and indicate successful transmission with a short beep. The Command payload used are as per default setting. To make it simple, code is not required to be sent together with the command.
 
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_mqtt_config.png)
 
 ### Automatic network reconnection
 The device will auto reconnect if it is disconnected from the AP or MQTT server. If the device is moved away permanently from the earlier connected AP, the device can be setup again to connect to the new Access Point.
+
+### Building it
+The circuit is quite straight forward. Only 3 IO pins are used from the WeMos D1 Mini module to connect with the switch, LED and buzzer. The device is powered directly from the 5V USB port when it is plugged in.
+
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouchSch.png)
