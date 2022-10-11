@@ -40,7 +40,7 @@ On a valid button action, it publishes the specific commands to the Command topi
 The device will auto reconnect if it is disconnected from the AP or MQTT server. If the device is moved away permanently from the earlier connected AP, the device can be setup again to connect to the new Access Point. I have installed the Alarmo OneTouch device on the doorway, as well as in the car. When my car approaches the gate, the device automatically reconnects to my home Access Point, and I use it to disarm upon entering the gate.
 
 ### Building it
-The circuit is quite straight forward. Only 3 IO pins are used from the WeMos D1 Mini module to connect with the switch, LED and buzzer. The device is powered directly from the 5V USB port when it is plugged in.
+The circuit is pretty straight forward. Only 3 IO pins are used from the WeMos D1 Mini module to connect with the switch, LED and buzzer. D3 has an interna 10K pull-up resistor and hence it is connected to the tactile push button directly. When the tactile switch is being pushed, the state of D3 input will change to low. D5 and D6 are set to be active-high GPOs which drives the LED and buzzer directly. The device is powered directly from the 5V USB port when it is being plugged in.
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouchSch.png)
 
@@ -48,4 +48,4 @@ WeMos D1 Mini & Tactile Push Button Switch Momentary Tact 12X12X7.0mm with LED L
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/wemos_d1mini_tactile_switch_with_led.png)
 
-The few components can be easily wired up on a small bread board stacking ontop of the WeMos D1 Mini. Compile and load the code using Arduino IDE and we are all set, once the AP connection is being setup.
+The few components can be easily wired up on a small bread board stacking ontop of the WeMos D1 Mini. Compile and load the code using Arduino IDE and we are all set. The final step is to setup the login credentials to the AP, and it is then ready for action!
