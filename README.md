@@ -10,7 +10,7 @@ Alarmo works great with Home Assistant Alarm Panel Card, but it user interface n
 The LED on the button itself indicates the current status of the alarm e.g Arming, Armed Away / Armed Night / Armed Home, Pending, Disarmed, Triggered or Offline. A buzzer produces short beeps during Arming & Pending, and continuous beep when the alarm status is Triggered.
 
 Blink the LED & beeps according to status of alarmo/state:
-* very fast alternate blink - MQTT connection error status
+* LED glow/fade - MQTT connection error status
 * fast blink - Pending or Arming status
 * short beep every 5s if exit / entry delay (Arming/Pending) status
 * slow blink – Armed status (armed_away / armed_home / armed_night)
@@ -31,6 +31,10 @@ On power up, the device will look for the preset Access Point SSID to connect. I
 Alarmo OneTouch connects to Home Assistant through Wi-Fi and using MQTT. MQTT needs to be enabled in Alarmo General Configuration. The device subscribe and listens to the State topic.
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_enable_mqtt.png)
+
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_http_interface.png)
+
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_http_configuration.png)
 
 On a valid button action, it publishes the specific commands to the Command topic and indicate successful transmission with a short beep. The Command payload used are as per default setting. To make it simple, code is not required to be sent together with the command.
 
