@@ -51,3 +51,5 @@ WeMos D1 Mini & Tactile Push Button Switch Momentary Tact 12X12X7.0mm with LED L
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/wemos_d1mini_tactile_switch_with_led.png)
 
 The few components can be easily wired up on a small prototyping board stacking ontop of the WeMos D1 Mini. Then, compile and load the code using Arduino IDE and we are all set. The final step is to setup the login credentials to the AP, and it is then ready for action!
+
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouch_prototype_board.png)
