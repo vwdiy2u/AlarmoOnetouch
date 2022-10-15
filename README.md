@@ -32,9 +32,7 @@ Alarmo OneTouch connects to Home Assistant through Wi-Fi and using MQTT. MQTT ne
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_enable_mqtt.png)
 
-![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_http_interface.png)
-
-![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_http_configuration.png)
+![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/Alarmo_http_webinterface.png)
 
 On a valid button action, it publishes the specific commands to the Command topic and indicate successful transmission with a short beep. The Command payload used are as per default setting. To make it simple, code is not required to be sent together with the command.
 
