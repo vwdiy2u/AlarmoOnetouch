@@ -54,4 +54,6 @@ The few components can be easily wired up on a small prototyping board stacking 
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouch_prototype_board.png)
 
+I have also designed a custom 2-piece snap-fit enclosure which can be easily 3D printed to house the electronics safely while exposing the button and the USB port. External power e.g AC-DC module housed in an internal wall switch which provides 5V power can also be wired through the USB port hole, if the device is intended to be wall mounted.
+
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouch_usb_casing.png)
