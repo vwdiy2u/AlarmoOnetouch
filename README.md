@@ -10,7 +10,7 @@ Alarmo works great with Home Assistant Alarm Panel Card, but it user interface n
 The LED on the button itself indicates the current status of the alarm e.g Arming, Armed Away / Armed Night / Armed Home, Pending, Disarmed, Triggered or Offline. A buzzer produces short beeps during Arming & Pending, and continuous beep when the alarm status is Triggered.
 
 Blink the LED & beeps according to status of alarmo/state:
-* LED glow/fade - MQTT connection error status
+* LED glow/fade - MQTT connection error status / offline / reconnecting
 * fast blink - Pending or Arming status
 * short beep every 5s if exit / entry delay (Arming/Pending) status
 * slow blink – Armed status (armed_away / armed_home / armed_night)
@@ -44,6 +44,8 @@ The device will auto reconnect if it is disconnected from the AP or MQTT server.
 ### Building it
 The circuit is pretty straight forward. Only 3 IO pins are used from the WeMos D1 Mini module to connect with the switch, LED and buzzer. D3 has an internal 10K pull-up resistor and hence it is connected to the tactile push button directly. When the tactile switch is being pushed, the state of D3 input will change to logic low. D5 and D6 are set to be active-high GPOs which drives the LED and buzzer directly. The device is powered directly from the 5V USB port when it is being plugged in.
 
+The WeMos D1 Mini is a good choice as it enables a standalone wireless web server application for status monitoring and device setup. The devices turns itself as an Accesspoint for configuration @http://192.168.4.1.
+
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouchSch.png)
 
 WeMos D1 Mini & Tactile Push Button Switch Momentary Tact 12X12X7.0mm with LED Lights:
@@ -54,6 +56,6 @@ The few components can be easily wired up on a small prototyping board stacking 
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouch_prototype_board.png)
 
-I have also designed a custom 2-piece snap-fit enclosure which can be easily 3D printed to house the electronics safely while exposing the button and the USB port. External power e.g AC-DC module housed in an internal wall switch which provides 5V power can also be wired through the USB port hole, if the device is intended to be wall mounted.
+I have also designed a custom 2-piece snap-fit enclosure which can be easily 3D printed to house the electronics safely while exposing the button and the USB port. This enables a standard USB cable to be plugged into the device for power / programming / view debugging messages via serial port terminal. If the device is intended to be wall mounted, an external power source e.g AC-DC module housed in an internal wall switch bracket can provides 5V power to the device through the USB opening at the enclosure.
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouch_usb_casing.png)
