@@ -44,7 +44,7 @@ The device will auto reconnect if it is disconnected from the AP or MQTT server.
 ### Building it
 The circuit is pretty straight forward. Only 3 IO pins are used from the WeMos D1 Mini module to connect with the switch, LED and buzzer. D3 has an internal 10K pull-up resistor and hence it is connected to the tactile push button directly. When the tactile switch is being pushed, the state of D3 input will change to logic low. D5 and D6 are set to be active-high GPOs which drives the LED and buzzer directly. The device is powered directly from the 5V USB port when it is being plugged in.
 
-The WeMos D1 Mini is a good choice as it enables a standalone wireless web server application for status monitoring and device setup. The devices turns itself as an Accesspoint for configuration @http://192.168.4.1.
+The WeMos D1 Mini is a good choice as it enables a standalone wireless web server application for status monitoring and device setup. The devices turns itself as an Access Point (AP) for configuration and can be acessible at http://192.168.4.1. Once configured, it will operate as Station (STA) and connects to the designated WiFi router / Access Point.
 
 ![](https://raw.githubusercontent.com/vwdiy2u/AlarmoOnetouch/main/images/AlarmoOneTouchSch.png)
 
